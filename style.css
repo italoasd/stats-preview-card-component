@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 13px;
+    background: var(--Very-dark-blue);
+    color: var(--White);
+    font-family: 'Inter';
+    height: 100vh;
+    width: 100vw;
+}
+p{
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+/* CLASS */
+.card{
+    background: var(--Dark-desaturated-blue);
+    border-radius: 8px;
+    margin: 100px 125px 100px 120px;
+    display: flex;
+    height: 445px;
+    width: 1070px;
+}
+.conteudo-esquerda{
+    width: 369px;
+    margin: 50px 50px 50px 67px;
+}
+.conteudo-esquerda h1{
+    margin: 17px 0 30px 0;
+    font-size: 35px;
+}
+.card-text{
+    color: var(--Slightly-transparent-white-p); 
+}
+.area-img{
+    margin-left: 50px;
+    width: 100%;
+    border-radius: 0 8px 8px 0;
+    background: hsla(277, 82%, 47%, 0.658);
+}
+.area-img img{
+    height: 100%;
+    float: right;
+    border-radius: 0 8px 8px 0;
+    opacity: 40%;
+}
+.purple{
+    color: var(--Soft-violet);
+}
+.stat-head{
+    display: flex;
+    margin-top: 90px;
+}
+.stat-head h2{
+    font-size: 21px;
+}
+.stat-center{
+    margin: 0 70px;
+}
+.stat-head p{
+    color: var(--Slightly-transparent-white-stat);
+    font-family: 'Lexend Deca';
+    margin-top: 7px;
+}
+@media (max-width: 1027px) {
+    p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .card{
+        height: 415px;
+        width: 737.186px;
+    }
+    .area-img img{
+        width: 418px;
+    }
+    .conteudo-esquerda{
+        width: 300px;
+        margin: 40px 40px 40px 57px;
+    }
+    .conteudo-esquerda h1{
+        margin: 14px 0 25px 0;
+        font-size: 30px;
+    }
+    .stat-head{
+        margin-top: 55px;
+    }
+    .stat-head h2{
+        font-size: 17.5px;
+    }
+    .stat-center{
+        margin: 0 35px;
+    }
+    .stat-head p{
+        margin-top: 7px;
+        font-size: 10.8px;
+    }
+}
+@media (max-width: 797px) {
+    body{
+     width: 110vw;
+    }
+    p{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .card{
+        height: 385px;
+        width: 698px;
+        margin: 100px 50px 100px 50px;
+    }
+    .area-img{
+        margin-left: 0;
+        width: 370px;
+    }
+    .area-img img{
+        width: 370px;
+    }
+    .conteudo-esquerda{
+        width: 300px;
+        margin: 20px 40px 20px 40px;
+    }
+    .conteudo-esquerda h1{
+        margin: 14px 0 19px 0;
+        font-size: 27px;
+    }
+    .stat-center{
+        margin: 0 30px;
+    }
+}
+@media (max-width: 546px) {
+    body{
+        height: 160vh;
+    }
+    P{
+        font-size: 15.5px;
+    }
+    .card{
+        flex-direction: column-reverse;
+        height: 953px;
+        width: 390px;
+        margin: 100px 25px 100px 25px;
+    }
+    .area-img{
+        border-radius: 8px 8px 0 0;
+        margin-left: 0;
+        width: 390px;
+    }
+    .area-img img{
+        border-radius: 8px 8px 0 0;
+        height: 280px;
+        width: 390px;
+    }
+    .conteudo-esquerda{
+        width: 300px;
+        margin: 40px 15px 20px 45px;
+        text-align: center;
+    }
+    .conteudo-esquerda h1{
+        margin: 14px 0 30px 0;
+        font-size: 33px;
+    }
+    .stat-head{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .stat-head div{
+        margin: 15px 0;
+    }
+    .stat-head h2{
+        font-size: 32px;
+    }
+    .stat-head p{
+        font-size: 15px;
+    }
+    .stat-center{
+        margin: 0;
+    }
+}
